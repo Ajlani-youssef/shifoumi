@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" type="text/css" href="stlyle.css">
+</head>
+<body>
+	<header>
+		<div>
+			<p id="pc">Computer score :<span id="pc_score">0</span> </p>
+		</div>
+		<div>
+		<label for="score">Select the Score</label>
+		<input type="range" id="score" name="score" value="10" min="5" max="20" step="5" onclick ="function_score()">
+		<output for="score" onforminput="value = score.valueAsNumber;"></output>
+		</div>
+		
+		<div>
+			<p id="you">Your score :<span id="player_score">0</span> </p>
+		</div>
+	</header>
+	<section>
+		<article>
+			<p>Choose between Rock (<img src="small_rock.png">), Paper (<img src="small_paper.png">) and Scissors (<img src="small_scissors.png">)</p>
+			<div class="button" id="bt">
+				<button onclick="function_rock()"><img onclick="function_rock()" src="rock.png" id="rock"></button>
+				<button><img onclick="function_paper() "src="paper.png" id="paper"></button>
+				<button><img onclick="function_scissors()" src="scissors.png" id="scissors"></button>
+			</div>
+			<div class="button" id="bt1">
+				<h3 id="result">Draw</h3>
+				<div id="apres_choisi">
+					<img src="rock.png" id="computer">
+					<img src="paper.png" id="player">
+				</div>
+				<div>
+					<button onclick="function_continue()" > continue </button>
+				</div>
+			</div>
+		</article>
+		<aside>
+			<figure>
+				<img src="game_rules.png">
+				<figcaption>Rules</figcaption>
+			</figure>
+		</aside>
+	</section>
+	<script src="C:\Users\Youssef\Desktop\html\chifomi\hhh.js"></script>
+</body>
+</html>
